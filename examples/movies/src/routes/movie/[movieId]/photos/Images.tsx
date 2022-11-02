@@ -1,4 +1,5 @@
 import { For } from "solid-js";
+import Poster from "~/components/Poster";
 import "./Images.scss";
 
 export default function ImagesSection(props) {
@@ -24,7 +25,7 @@ function ImagesItem(props) {
   return (
     <div class={`images-item images-${props.type}`}>
       <div class="images-item__img">
-        <img
+        <Poster
           // loading="lazy"
           width={thumbWidth}
           height={thumbHeight}
